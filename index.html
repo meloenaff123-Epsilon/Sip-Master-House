@@ -3,12 +3,148 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Сип Мастэр Хаус</title>
+<meta name="description" content="Сип Мастэр Хаус - Улаанбаатар хотод SIP болон модон байшин барилга угсралт. Чанартай, дулаан алдагдал багатай орчин үеийн шийдэл.">
+<meta name="keywords" content="SIP байшин, модон байшин, байшин барих, Улаанбаатар, барилга">
+<meta name="author" content="Сип Мастэр Хаус">
+<title>Сип Мастэр Хаус | SIP Байшин</title>
+
 <link rel="stylesheet" href="style.css">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial, sans-serif;}
+
+body{line-height:1.6;background:#f8f9fa;color:#333;}
+
+header{
+  background:#111;
+  color:white;
+  padding:20px 0;
+  text-align:center;
+}
+
+nav a{
+  color:white;
+  margin:0 15px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+nav a:hover{color:#f4b400;}
+
+.hero{
+  background:url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c") center/cover no-repeat;
+  height:90vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:white;
+  position:relative;
+}
+
+.hero::after{
+  content:"";
+  position:absolute;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.5);
+}
+
+.hero-content{
+  position:relative;
+  z-index:1;
+}
+
+.btn{
+  display:inline-block;
+  background:#f4b400;
+  color:black;
+  padding:12px 25px;
+  margin-top:20px;
+  text-decoration:none;
+  border-radius:5px;
+  font-weight:bold;
+}
+
+section{
+  padding:60px 10%;
+  text-align:center;
+}
+
+.cards{
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+  justify-content:center;
+}
+
+.card{
+  background:white;
+  padding:20px;
+  flex:1 1 300px;
+  border-radius:8px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.gallery{
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+  justify-content:center;
+}
+
+.gallery img{
+  width:350px;
+  border-radius:8px;
+  transition:0.3s;
+}
+
+.gallery img:hover{
+  transform:scale(1.05);
+}
+
+form{
+  max-width:500px;
+  margin:auto;
+}
+
+input, textarea{
+  width:100%;
+  padding:12px;
+  margin:10px 0;
+  border:1px solid #ccc;
+  border-radius:5px;
+}
+
+button{
+  background:#111;
+  color:white;
+  padding:12px;
+  border:none;
+  width:100%;
+  cursor:pointer;
+  border-radius:5px;
+}
+
+button:hover{background:#f4b400;color:black;}
+
+footer{
+  background:#111;
+  color:white;
+  padding:20px;
+  text-align:center;
+}
+
+html{scroll-behavior:smooth;}
+
+@media(max-width:768px){
+  .hero{height:70vh;}
+  .gallery img{width:100%;}
+}
+</style>
 </head>
 <body>
 
-<!-- Header -->
 <header>
   <h1>Сип Мастэр Хаус</h1>
   <p>Модон болон SIP байшингийн мэргэжлийн барилга</p>
@@ -20,66 +156,55 @@
   </nav>
 </header>
 
-<!-- Hero -->
 <section class="hero">
   <div class="hero-content">
-    <h2>SIP Хаус Модон Байшин </h2>
+    <h2>SIP Хаус & Модон Байшин</h2>
     <p>Дулаан алдагдал багатай, бат бөх, орчин үеийн шийдэл</p>
     <a href="#contact" class="btn">Үнэгүй зөвлөгөө авах</a>
   </div>
 </section>
 
-<!-- About -->
 <section id="about">
   <h2>Бидний тухай</h2>
-  <p>Сип Мастэр Хаус нь Улаанбаатар хотод SIP болон модон байшингийн барилга угсралтын үйлчилгээ үзүүлдэг. Бид чанар, бат бөх, дулаан шийдлийг санал болгодог.</p>
+  <p>Сип Мастэр Хаус нь Улаанбаатар хотод SIP болон модон байшингийн барилга угсралтын үйлчилгээ үзүүлдэг. Чанар, бат бөх байдал, дулаан хэмнэлт бол бидний гол зарчим.</p>
 </section>
 
-<!-- Services -->
 <section id="services">
   <h2>Манай үйлчилгээ</h2>
   <div class="cards">
-    <div class="card"><h3>SIP Байшин</h3><p>Эрчим хүчний хэмнэлттэй орчин үеийн барилга.</p></div>
+    <div class="card"><h3>SIP Байшин</h3><p>Эрчим хүчний хэмнэлттэй, дулаан алдагдал багатай.</p></div>
     <div class="card"><h3>Модон Байшин</h3><p>Байгальд ээлтэй, үзэмж төгс шийдэл.</p></div>
     <div class="card"><h3>Засвар, өргөтгөл</h3><p>Байшин засвар, өргөтгөл, шинэчлэл.</p></div>
   </div>
 </section>
 
-<!-- Projects Gallery -->
 <section id="projects">
   <h2>Төслүүд</h2>
   <div class="gallery">
-    <!-- Project 1 -->
-    <img src="e537a2ef-2f57-4bd0-9bc0-f902966c4246.png" alt="Project 1">
-    <!-- Project 2 -->
-    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Project 2">
-    <!-- Project 3 -->
-    <img src="e537a2ef-2f57-4bd0-9bc0-f902966c4246.png" alt="Project 3">
+    <img src="https://images.unsplash.com/photo-1572120360610-d971b9d7767c" alt="SIP байшин төсөл 1">
+    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="SIP байшин төсөл 2">
+    <img src="https://images.unsplash.com/photo-1599423300746-b62533397364" alt="SIP байшин төсөл 3">
   </div>
 </section>
 
-<!-- Contact -->
 <section id="contact">
   <h2>Холбоо барих</h2>
   <p>📞 +976 9925 5484 | 📧 melo.enaff123@gmail.com</p>
-  <form action="mailto:melo.enaff123@gmail.com" method="post" enctype="text/plain">
+
+  <!-- NETLIFY READY FORM -->
+  <form name="contact" method="POST" data-netlify="true">
+    <input type="hidden" name="form-name" value="contact">
     <input type="text" name="name" placeholder="Таны нэр" required>
     <input type="text" name="phone" placeholder="Утас" required>
     <input type="email" name="email" placeholder="Email" required>
     <textarea name="message" placeholder="Төслийн мэдээлэл" rows="4" required></textarea>
     <button type="submit">Илгээх</button>
   </form>
-  <div class="map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46979.31788894844!2d106.789452!3d47.920693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5d969387b6b8c49f%3A0x3c3178ee6235b8f0!2sUlaanbaatar%2C%20Mongolia!5e0!3m2!1sen!2s!4v1615463787100!5m2!1sen!2s" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-  </div>
 </section>
 
-<!-- Footer -->
 <footer>
   <p>© 2026 Сип Мастэр Хаус. Бүх эрх хуулиар хамгаалагдсан.</p>
 </footer>
 
-<script src="script.js"></script>
 </body>
-
 </html>
